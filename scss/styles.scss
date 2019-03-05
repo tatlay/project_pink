@@ -1,0 +1,152 @@
+.wrapper{
+	display: grid;
+	grid-template-rows: 
+	5px //top pink border 
+	115px //navigation including logo
+	45px //pink overlay box
+	680px //hero image
+	auto //welcome section
+	750px //news
+	735px //calender
+	248px //pink twitter feed
+	658px; //contact us info
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-areas:
+    	"top top top"
+        ". header ."
+        ". pinkHeader ."
+        ". hero ."
+        ". welcome ."
+	    ". news ."
+	    ". calender ."
+	    ". pinkTwitter ."
+    	". contact ."
+    ;
+}
+
+.welcomeHeading{
+	color: #EC418F;
+
+}
+
+.top{
+	background-color: #EC418F;
+	grid-area: top;
+	z-index: 2;
+}
+
+.logo{
+	background-color: white;
+	grid-area: header; 
+}
+
+.logoText{
+	position: relative;
+	top:60px;
+	left:45px;
+}
+
+.circle{
+	background-color: #EC418F;
+	grid-area: header;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -40px;
+	left: 45px;
+	border-radius: 50%;
+	z-index: 1; 
+}
+
+.pinkHeader{
+	background-color: #EC418F;
+	//opacity: 0.5;
+	grid-area: pinkHeader;
+	z-index: 2;
+}
+
+.hero{
+	background-image: url("https://images.hellogiggles.com/uploads/2018/03/21041247/puppies.jpg");
+	background-repeat: no-repeat;
+	background-color: black;
+	grid-area: hero;
+}
+
+.welcome{
+
+	grid-area: welcome;
+	padding-left: 160px;
+	padding-top: 130px;
+	display: flex;;
+	
+}
+
+.textContainer{
+}
+
+
+.boxContainer{
+	width: 50%;
+	 justify-content: space-evenly;	
+
+}
+
+
+.welcomeHeading{
+    width: 50%;
+}
+
+
+.boldText{
+    width: 50%;
+}
+
+.unboldText{
+	font-size: 1em;
+}
+
+.one{
+	background-color: red;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 1;
+}
+
+.two{
+	background-color: blue;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 2;
+}
+
+.three{
+	background-color: green;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 3;
+}
+
+.news{
+	background-color: #F37F2C;
+	grid-area: news;
+}
+
+.calender{
+	grid-area: calender;
+}
+
+.pinkTwitter{
+	background-color: #EC418F;
+	grid-area: pinkTwitter;
+}
+
+.contact{
+	background-color: #4D4E4E;
+	grid-area: contact;
+}

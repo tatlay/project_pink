@@ -11,9 +11,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 
@@ -26,21 +25,36 @@
 
 <body>
 <div class="wrapper">
+  <div class="top"></div>
   <nav class="logo">Logo and links</nav>
+  <div class="circle">
+      <h1 class="logoText">LOGO</h1>
+    
+
+  </div>
   <header class="pinkHeader">pink box</header>
   <section class="hero">hero image</section>
-  <article class="welcome">welcome</article>
+  <article class="welcome"> 
+        <div class="textContainer">
+
+          <h1 class="welcomeHeading">Welcome</h1>
+          <h2 class="boldText">Welcome to the school where high expectations in terms of learning and behaviour ensure that girls flourish.</h2>
+
+          <p class="unboldText">We are now in our fantastic new building with facilities which are second to none, providing an exceptional learning environment. This can only lead to even greater achievements. We are a school where young women achieve academic excellence, where they are encouraged to participate and excel in artistic and sporting events...</p>
+        </div>
+        
+        <div class="boxContainer">  
+          <div class="one">Apply for a <br>place</div>
+          <div class="two">two</div>
+          <div class="three">three</div>
+        </div>
+  </article>
   <article class="news">news</article>
   <article class="calender">calender</article>
   <article class="pinkTwitter">pink twitter feed</article>
   <footer class="contact">contact us info</footer>
 </div>
 
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
