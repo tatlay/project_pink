@@ -1,0 +1,38 @@
+{
+  "name": "project_pink",
+  "version": "1.0.0",
+  "description": "2nd attempt",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-sprite": "^0.0.9",
+    "gulp-jscs": "^4.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-tabify": "^0.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatlay/project_pink.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Tat Lay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatlay/project_pink/issues"
+  },
+  "homepage": "https://github.com/tatlay/project_pink#readme"
+}

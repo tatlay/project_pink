@@ -1,3 +1,24 @@
+@import "carousel.scss";
+@import "calender.scss";
+
+$pink: #EC418F;
+
+
+
+body{
+	padding-bottom: 200px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+  color: $pink;
+  text-decoration: none;
+}
+
 .wrapper{
 	display: grid;
 	grid-template-rows: 
@@ -25,12 +46,12 @@
 }
 
 .welcomeHeading{
-	color: #EC418F;
+	color: $pink;
 
 }
 
 .top{
-	background-color: #EC418F;
+	background-color: $pink;
 	grid-area: top;
 	z-index: 2;
 }
@@ -38,16 +59,12 @@
 .logo{
 	background-color: white;
 	grid-area: header; 
-}
-
-.logoText{
-	position: relative;
-	top:60px;
-	left:45px;
+	right: -311px;
+    position: relative;
 }
 
 .circle{
-	background-color: #EC418F;
+	background-color: $pink;
 	grid-area: header;
 	width: 200px;
 	height: 200px;
@@ -56,10 +73,24 @@
 	left: 45px;
 	border-radius: 50%;
 	z-index: 1; 
+	color: white;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // display: grid;
+    // place-items: center; //aligns the logo
+
+}
+
+.logoText{
+	top: 10px;
 }
 
 .pinkHeader{
-	background-color: #EC418F;
+	background-color: $pink;
 	//opacity: 0.5;
 	grid-area: pinkHeader;
 	z-index: 2;
@@ -77,7 +108,9 @@
 	grid-area: welcome;
 	padding-left: 160px;
 	padding-top: 130px;
-	display: flex;;
+	padding-right: 20px;
+	padding-bottom:130px;
+	display: flex;
 	
 }
 
@@ -87,13 +120,15 @@
 
 .boxContainer{
 	width: 50%;
-	 justify-content: space-evenly;	
+	justify-content: space-evenly;	
 
 }
 
 
 .welcomeHeading{
-    width: 50%;
+	color: $pink;
+    font-size: 57px;
+    position: relative;
 }
 
 
@@ -112,6 +147,7 @@
 	border-radius: 8px;
 	margin: auto;
 	order: 1;
+
 }
 
 .two{
@@ -137,16 +173,154 @@
 	grid-area: news;
 }
 
+.newsTitle{
+	color: white;
+    font-size: 57px;
+    position: relative;
+    left: 150px;
+	
+}
+
+
 .calender{
 	grid-area: calender;
 }
 
+.calenderTitle{
+color: #642d8c;
+    font-size: 57px;
+    position: relative;
+    left: 150px;
+	
+}
+
+h1.largeCalender{
+	font-size: 67px;
+	color: #642d8c;
+	position: relative;
+    float: left;
+    left: 19px;
+}
+
+h3 {
+	margin-top: 81px;
+	position: relative;
+    left: 20px;
+}
+
+time{
+	color: #642d8c;
+	position: relative;
+	left: 32px;
+}
+
+.purpleCircle{
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	background-color: #642d8c;
+}
+
 .pinkTwitter{
-	background-color: #EC418F;
+	background-color: $pink;
 	grid-area: pinkTwitter;
+
+	color: white;
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 115px 74px 1fr 115px;
+    grid-template-areas:
+    	". . . . ."
+    	". icon tweet tweet ."
+    	". . follow controls .";
+
+    margin-bottom: 15px;
+
+    }
+
+.follow{
+	grid-area: follow;
+	background-color: #f067a5;
+	width: 135px;
+	height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    display: flex;
+    margin-left: 60px;
+}
+
+
+.pinktwitterIcon{
+	grid-area: icon;
+}
+
+.twitter_container{
+	grid-area: tweet;
+}
+
+.twitter_controllers{
+	grid-area: controls;
 }
 
 .contact{
 	background-color: #4D4E4E;
+	color: white;
 	grid-area: contact;
+
+	display: grid;
+	grid-template-rows: 1fr 40fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    	". top ."
+    	"contact links map"
+    	"privacy privacy .";
+
+}
+
+.backToTop{
+	grid-area: top;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.contactAside{
+	grid-area: contact;
+	padding-left: 155px;
+}
+
+.linksAside{
+	grid-area: links;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapAside{
+	grid-area: map;
+	padding-right: 155px;
+}
+
+.getDirections{
+	background-color: #8b8c8c;
+	width: 135px;
+	height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin-top: 28px;
+}
+
+
+.privacy{
+	grid-area: privacy;
+	padding-bottom: 55px;
+	padding-left: 155px;
 }

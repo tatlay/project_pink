@@ -1,3 +1,76 @@
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px; }
+
+/* The controlsy */
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px; }
+
+.carousel-control.right {
+  right: -12px; }
+
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px; }
+
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #cecece; }
+
+.carousel-indicators .active {
+  background: #428bca; }
+
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px; }
+
+/* The controlsy */
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px; }
+
+.carousel-control.right {
+  right: -12px; }
+
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px; }
+
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #cecece; }
+
+.carousel-indicators .active {
+  background: #428bca; }
+
+body {
+  padding-bottom: 200px; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  color: #EC418F;
+  text-decoration: none; }
+
 .wrapper {
   display: grid;
   grid-template-rows: 5px 115px 45px 680px auto 750px 735px 248px 658px;
@@ -14,12 +87,9 @@
 
 .logo {
   background-color: white;
-  grid-area: header; }
-
-.logoText {
-  position: relative;
-  top: 60px;
-  left: 45px; }
+  grid-area: header;
+  right: -311px;
+  position: relative; }
 
 .circle {
   background-color: #EC418F;
@@ -30,7 +100,16 @@
   top: -40px;
   left: 45px;
   border-radius: 50%;
-  z-index: 1; }
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.logoText {
+  top: 10px; }
 
 .pinkHeader {
   background-color: #EC418F;
@@ -47,6 +126,8 @@
   grid-area: welcome;
   padding-left: 160px;
   padding-top: 130px;
+  padding-right: 20px;
+  padding-bottom: 130px;
   display: flex; }
 
 .boxContainer {
@@ -54,7 +135,9 @@
   justify-content: space-evenly; }
 
 .welcomeHeading {
-  width: 50%; }
+  color: #EC418F;
+  font-size: 57px;
+  position: relative; }
 
 .boldText {
   width: 50%; }
@@ -90,13 +173,117 @@
   background-color: #F37F2C;
   grid-area: news; }
 
+.newsTitle {
+  color: white;
+  font-size: 57px;
+  position: relative;
+  left: 150px; }
+
 .calender {
   grid-area: calender; }
 
+.calenderTitle {
+  color: #642d8c;
+  font-size: 57px;
+  position: relative;
+  left: 150px; }
+
+h1.largeCalender {
+  font-size: 67px;
+  color: #642d8c;
+  position: relative;
+  float: left;
+  left: 19px; }
+
+h3 {
+  margin-top: 81px;
+  position: relative;
+  left: 20px; }
+
+time {
+  color: #642d8c;
+  position: relative;
+  left: 32px; }
+
+.purpleCircle {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #642d8c; }
+
 .pinkTwitter {
   background-color: #EC418F;
-  grid-area: pinkTwitter; }
+  grid-area: pinkTwitter;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 115px 74px 1fr 115px;
+  grid-template-areas: ". . . . ." ". icon tweet tweet ." ". . follow controls .";
+  margin-bottom: 15px; }
+
+.follow {
+  grid-area: follow;
+  background-color: #f067a5;
+  width: 135px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  display: flex;
+  margin-left: 60px; }
+
+.pinktwitterIcon {
+  grid-area: icon; }
+
+.twitter_container {
+  grid-area: tweet; }
+
+.twitter_controllers {
+  grid-area: controls; }
 
 .contact {
   background-color: #4D4E4E;
-  grid-area: contact; }
+  color: white;
+  grid-area: contact;
+  display: grid;
+  grid-template-rows: 1fr 40fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". top ." "contact links map" "privacy privacy ."; }
+
+.backToTop {
+  grid-area: top;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px; }
+
+.contactAside {
+  grid-area: contact;
+  padding-left: 155px; }
+
+.linksAside {
+  grid-area: links;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.mapAside {
+  grid-area: map;
+  padding-right: 155px; }
+
+.getDirections {
+  background-color: #8b8c8c;
+  width: 135px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  margin-top: 28px; }
+
+.privacy {
+  grid-area: privacy;
+  padding-bottom: 55px;
+  padding-left: 155px; }
