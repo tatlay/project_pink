@@ -1,0 +1,29 @@
+.wrapper{
+	display: grid;
+	grid-template-rows: 
+	5px //top pink border 
+	115px //navigation including logo
+	45px //pink overlay box
+	680px //hero image
+	auto //welcome section
+	750px //news
+	735px //calender
+	248px //pink twitter feed
+	658px; //contact us info
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-areas:
+    	"top top top"
+        ". header ."
+        ". pinkHeader ."
+        ". hero ."
+        ". welcome ."
+	    ". news ."
+	    ". calender ."
+	    ". pinkTwitter ."
+    	". contact ."
+    ;
+}
+
+body{
+	padding-bottom: 200px;
+}

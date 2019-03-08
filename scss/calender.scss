@@ -29,3 +29,43 @@
 .carousel-indicators .active {
 background: #428bca;
 }
+
+
+.calender{
+    grid-area: calender;
+}
+
+.calenderTitle{
+color: #642d8c;
+    font-size: 57px;
+    position: relative;
+    left: 150px;
+    
+}
+
+h1.largeCalender{
+    font-size: 67px;
+    color: #642d8c;
+    position: relative;
+    float: left;
+    left: 19px;
+}
+
+h3 {
+    margin-top: 81px;
+    position: relative;
+    left: 20px;
+}
+
+time{
+    color: #642d8c;
+    position: relative;
+    left: 32px;
+}
+
+.purpleCircle{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #642d8c;
+}

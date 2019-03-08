@@ -1,0 +1,47 @@
+.pinkHeader{
+	background-color: $pink;
+	opacity: 0.5;
+	grid-area: pinkHeader;
+	z-index: 88;
+	color: white;
+	text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 45px;
+
+}
+
+.hero{
+	background: no-repeat center/110% url("https://images.hellogiggles.com/uploads/2018/03/21041247/puppies.jpg");
+	background-color: black;
+	grid-area: hero;
+    position: relative;
+    top: -45px;
+   	color: white;
+	text-align: center;
+    display: flex;
+    justify-content: bottom;
+    align-items: center;
+    flex-direction: column;
+}
+
+.exploreText{
+	color: white;
+	position: relative;
+	top: 559px;
+
+}
+
+.pinkTopText{
+	position: relative;
+	top: 10px;
+	z-index: 89;
+}
+
+.heroMessage{
+	color: white;
+	position: relative;
+	top: 576px;
+
+}

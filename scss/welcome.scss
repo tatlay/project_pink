@@ -1,0 +1,67 @@
+.welcomeHeading{
+	color: $pink;
+
+}
+
+
+
+.welcome{
+
+	grid-area: welcome;
+	padding-left: 160px;
+	padding-top: 130px;
+	padding-right: 20px;
+	padding-bottom:130px;
+	display: flex;
+	
+}
+
+.boxContainer{
+	width: 50%;
+	justify-content: space-evenly;	
+
+}
+
+
+.welcomeHeading{
+	color: $pink;
+    font-size: 57px;
+    position: relative;
+}
+
+
+.boldText{
+    width: 50%;
+}
+
+.unboldText{
+	font-size: 1em;
+}
+
+.one{
+	background-color: red;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 1;
+
+}
+
+.two{
+	background-color: blue;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 2;
+}
+
+.three{
+	background-color: green;
+	width: 284px;
+	height: 122px;
+	border-radius: 8px;
+	margin: auto;
+	order: 3;
+}

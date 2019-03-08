@@ -1,0 +1,42 @@
+.pinkTwitter{
+	background-color: $pink;
+	grid-area: pinkTwitter;
+
+	color: white;
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 115px 74px 1fr 115px;
+    grid-template-areas:
+    	". . . . ."
+    	". icon tweet tweet ."
+    	". . follow controls .";
+
+    margin-bottom: 15px;
+
+    }
+
+.follow{
+	grid-area: follow;
+	background-color: #f067a5;
+	width: 135px;
+	height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    display: flex;
+    margin-left: 60px;
+}
+
+
+.pinktwitterIcon{
+	grid-area: icon;
+}
+
+.twitter_container{
+	grid-area: tweet;
+}
+
+.twitter_controllers{
+	grid-area: controls;
+}

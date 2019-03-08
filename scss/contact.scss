@@ -1,0 +1,60 @@
+.contact{
+	background-color: #4D4E4E;
+	color: white;
+	grid-area: contact;
+
+	display: grid;
+	grid-template-rows: 1fr 40fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    	". top ."
+    	"contact links map"
+    	"privacy privacy .";
+
+}
+
+.backToTop{
+	grid-area: top;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.contactAside{
+	grid-area: contact;
+	padding-left: 155px;
+}
+
+.linksAside{
+	grid-area: links;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapAside{
+	grid-area: map;
+	padding-right: 155px;
+}
+
+.getDirections{
+	background-color: #8b8c8c;
+	width: 135px;
+	height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin-top: 28px;
+}
+
+
+.privacy{
+	grid-area: privacy;
+	padding-bottom: 55px;
+	padding-left: 155px;
+}

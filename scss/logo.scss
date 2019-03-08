@@ -1,0 +1,38 @@
+.top{
+	background-color: $pink;
+	grid-area: top;
+	z-index: 2;
+}
+
+.logo{
+	background-color: white;
+	grid-area: header; 
+	right: -311px;
+    position: relative;
+}
+
+.circle{
+	background-color: $pink;
+	grid-area: header;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -40px;
+	left: 45px;
+	border-radius: 50%;
+	z-index: 0; 
+	color: white;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // display: grid;
+    // place-items: center; //aligns the logo
+
+}
+
+.logoText{
+	top: 10px;
+}

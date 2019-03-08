@@ -29,37 +29,6 @@
 .carousel-indicators .active {
   background: #428bca; }
 
-.carousel {
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px; }
-
-/* The controlsy */
-.carousel-control {
-  left: -12px;
-  height: 40px;
-  width: 40px;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  margin-top: 90px; }
-
-.carousel-control.right {
-  right: -12px; }
-
-/* The indicators */
-.carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: -10px;
-  margin-right: -19px; }
-
-/* The colour of the indicators */
-.carousel-indicators li {
-  background: #cecece; }
-
-.carousel-indicators .active {
-  background: #428bca; }
-
 /* Taken from https://www.w3schools.com/howto/howto_css_dropdown.asp*/
 /* Dropdown Button */
 .dropbtn {
@@ -87,7 +56,7 @@
   background-color: #e4488e;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 114;
+  z-index: 89;
   top: 60px; }
 
 /* Links inside the dropdown */
@@ -111,9 +80,6 @@
   background-color: white;
   color: black; }
 
-body {
-  padding-bottom: 200px; }
-
 a {
   text-decoration: none;
   color: white; }
@@ -128,8 +94,8 @@ a:hover {
   grid-template-columns: 1fr 20fr 1fr;
   grid-template-areas: "top top top" ". header ." ". pinkHeader ." ". hero ." ". welcome ." ". news ." ". calender ." ". pinkTwitter ." ". contact ."; }
 
-.welcomeHeading {
-  color: #EC418F; }
+body {
+  padding-bottom: 200px; }
 
 .top {
   background-color: #EC418F;
@@ -202,6 +168,9 @@ a:hover {
   position: relative;
   top: 576px; }
 
+.welcomeHeading {
+  color: #EC418F; }
+
 .welcome {
   grid-area: welcome;
   padding-left: 160px;
@@ -271,6 +240,37 @@ a:hover {
 .newsContent {
   color: black;
   padding-left: 10px; }
+
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px; }
+
+/* The controlsy */
+.carousel-control {
+  left: -12px;
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  margin-top: 90px; }
+
+.carousel-control.right {
+  right: -12px; }
+
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px; }
+
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #cecece; }
+
+.carousel-indicators .active {
+  background: #428bca; }
 
 .calender {
   grid-area: calender; }
