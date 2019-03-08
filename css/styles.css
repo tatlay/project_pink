@@ -179,6 +179,19 @@ a:hover {
   position: relative;
   left: 150px; }
 
+.newsbox {
+  background-color: white; }
+
+.posted {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #b8b9b9;
+  background-color: white; }
+
+.newsContent {
+  color: black;
+  padding-left: 10px; }
+
 .calender {
   grid-area: calender; }
 
