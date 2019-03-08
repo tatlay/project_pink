@@ -2,7 +2,7 @@
 	background-color: $pink;
 	opacity: 0.5;
 	grid-area: pinkHeader;
-	z-index: 88;
+	z-index: 1;
 	color: white;
 	text-align: center;
     display: flex;
@@ -13,7 +13,13 @@
 }
 
 .hero{
-	background: no-repeat center/110% url("https://images.hellogiggles.com/uploads/2018/03/21041247/puppies.jpg");
+
+
+	//background: center 100% / 15% 60% repeat-x url("../images/hero.jpg");
+
+	//background: no-repeat url("../images/hero.jpg");
+
+	background: no-repeat center/100% url("../images/hero.jpg");
 	background-color: black;
 	grid-area: hero;
     position: relative;
@@ -21,27 +27,29 @@
    	color: white;
 	text-align: center;
     display: flex;
-    justify-content: bottom;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .exploreText{
 	color: white;
 	position: relative;
-	top: 559px;
+	top: 270px;
 
 }
 
 .pinkTopText{
 	position: relative;
 	top: 10px;
-	z-index: 89;
+    left: -175px;
+	z-index: 1;
 }
 
 .heroMessage{
 	color: white;
 	position: relative;
-	top: 576px;
+	top: 280px;
 
 }

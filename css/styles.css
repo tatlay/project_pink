@@ -33,7 +33,6 @@
 /* Dropdown Button */
 .dropbtn {
   color: black;
-  padding: 8px;
   font-size: 12px;
   border: none;
   display: flex;
@@ -47,7 +46,7 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  padding-top: 35px; }
+  padding-top: 60px; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -57,7 +56,7 @@
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 89;
-  top: 60px; }
+  top: 75px; }
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -88,9 +87,17 @@ a:hover {
   color: #EC418F;
   text-decoration: none; }
 
+.search {
+  position: relative;
+  top: -6px; }
+
+.icons {
+  position: relative;
+  top: -11px; }
+
 .wrapper {
   display: grid;
-  grid-template-rows: 5px 115px 45px 680px auto 750px 735px 248px 658px;
+  grid-template-rows: 5px 115px 45px 426px auto 750px 735px 248px 658px;
   grid-template-columns: 1fr 20fr 1fr;
   grid-template-areas: "top top top" ". header ." ". pinkHeader ." ". hero ." ". welcome ." ". news ." ". calender ." ". pinkTwitter ." ". contact ."; }
 
@@ -132,7 +139,7 @@ body {
   background-color: #EC418F;
   opacity: 0.5;
   grid-area: pinkHeader;
-  z-index: 88;
+  z-index: 1;
   color: white;
   text-align: center;
   display: flex;
@@ -141,7 +148,7 @@ body {
   padding-left: 45px; }
 
 .hero {
-  background: no-repeat center/110% url("https://images.hellogiggles.com/uploads/2018/03/21041247/puppies.jpg");
+  background: no-repeat center/100% url("../images/hero.jpg");
   background-color: black;
   grid-area: hero;
   position: relative;
@@ -149,34 +156,32 @@ body {
   color: white;
   text-align: center;
   display: flex;
-  justify-content: bottom;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
 
 .exploreText {
   color: white;
   position: relative;
-  top: 559px; }
+  top: 270px; }
 
 .pinkTopText {
   position: relative;
   top: 10px;
-  z-index: 89; }
+  left: -175px;
+  z-index: 1; }
 
 .heroMessage {
   color: white;
   position: relative;
-  top: 576px; }
-
-.welcomeHeading {
-  color: #EC418F; }
+  top: 280px; }
 
 .welcome {
   grid-area: welcome;
-  padding-left: 160px;
-  padding-top: 130px;
+  padding-left: 50px;
   padding-right: 20px;
-  padding-bottom: 130px;
+  padding-bottom: 46px;
   display: flex; }
 
 .boxContainer {
@@ -189,7 +194,7 @@ body {
   position: relative; }
 
 .boldText {
-  width: 50%; }
+  width: 100%; }
 
 .unboldText {
   font-size: 1em; }
@@ -199,24 +204,29 @@ body {
   width: 284px;
   height: 122px;
   border-radius: 8px;
-  margin: auto;
-  order: 1; }
+  margin: 10px;
+  order: 1;
+  background: no-repeat center/100% url("../images/one.png"); }
 
 .two {
   background-color: blue;
   width: 284px;
   height: 122px;
   border-radius: 8px;
-  margin: auto;
-  order: 2; }
+  margin: 10px;
+  order: 2;
+  background: no-repeat center/100% url("../images/two.png"); }
 
 .three {
   background-color: green;
   width: 284px;
   height: 122px;
   border-radius: 8px;
-  margin: auto;
-  order: 3; }
+  margin: 10px;
+  order: 3;
+  background: no-repeat center/100% url("../images/three.png"); }
+  .three:hover {
+    color: #ed4290; }
 
 .news {
   background-color: #F37F2C;
@@ -380,3 +390,6 @@ time {
   grid-area: privacy;
   padding-bottom: 55px;
   padding-left: 155px; }
+
+h2 {
+  font-size: 18px; }
